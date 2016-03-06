@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="dir_f73e4f8afd23314abf55dfbfd6e00760" kind="dir">
+    <compoundname>/home/chaperone</compoundname>
+    <innerdir refid="dir_56709b7cd804bc13760bcda228b72118">/home/chaperone/Documents</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/chaperone/"/>
+  </compounddef>
+</doxygen>

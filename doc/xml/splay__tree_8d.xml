@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="splay__tree_8d" kind="file" language="D">
+    <compoundname>splay_tree.d</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"><ref refid="structsplay__tree__t" kindref="compound">splay_tree</ref>.o:<sp/><ref refid="structsplay__tree__t" kindref="compound">splay_tree</ref>.c<sp/>/usr/include/stdc-predef.h<sp/>\
+<sp/>include/<ref refid="structsplay__tree__t" kindref="compound">splay_tree</ref>.h<sp/>/usr/include/stdlib.h<sp/>/usr/include/features.h<sp/>\</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/>/usr/include/sys/cdefs.h<sp/>/usr/include/bits/wordsize.h<sp/>\</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/>/usr/include/gnu/stubs.h<sp/>/usr/include/gnu/stubs-64.h<sp/>\</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/>/usr/lib64/gcc/x86_64-slackware-linux/5.3.0/include/stddef.h<sp/>\</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/>/usr/include/bits/waitflags.h<sp/>/usr/include/bits/waitstatus.h<sp/>\</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/>/usr/include/endian.h<sp/>/usr/include/bits/endian.h<sp/>\</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/>/usr/include/bits/byteswap.h<sp/>/usr/include/bits/types.h<sp/>\</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/>/usr/include/bits/typesizes.h<sp/>/usr/include/bits/byteswap-16.h<sp/>\</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/>/usr/include/sys/types.h<sp/>/usr/include/time.h<sp/>/usr/include/sys/select.h<sp/>\</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/>/usr/include/bits/select.h<sp/>/usr/include/bits/sigset.h<sp/>\</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/>/usr/include/bits/time.h<sp/>/usr/include/sys/sysmacros.h<sp/>\</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/>/usr/include/bits/pthreadtypes.h<sp/>/usr/include/alloca.h<sp/>\</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/>/usr/include/bits/stdlib-</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">.h<sp/>/usr/include/stdio.h<sp/>\</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/>/usr/include/libio.h<sp/>/usr/include/_G_config.h<sp/>/usr/include/wchar.h<sp/>\</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/>/usr/lib64/gcc/x86_64-slackware-linux/5.3.0/include/stdarg.h<sp/>\</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/>/usr/include/bits/stdio_lim.h<sp/>/usr/include/bits/sys_errlist.h<sp/>\</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/>/usr/include/errno.h<sp/>/usr/include/bits/errno.h<sp/>\</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/>/usr/include/linux/errno.h<sp/>/usr/include/</highlight><highlight class="keyword">asm</highlight><highlight class="normal">/errno.h<sp/>\</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/>/usr/include/</highlight><highlight class="keyword">asm</highlight><highlight class="normal">-</highlight><highlight class="keyword">generic</highlight><highlight class="normal">/errno.h<sp/>/usr/include/</highlight><highlight class="keyword">asm</highlight><highlight class="normal">-</highlight><highlight class="keyword">generic</highlight><highlight class="normal">/errno-base.h</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.d"/>
+  </compounddef>
+</doxygen>

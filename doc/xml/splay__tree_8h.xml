@@ -1,0 +1,355 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="splay__tree_8h" kind="file" language="C++">
+    <compoundname>splay_tree.h</compoundname>
+    <includedby refid="splay__tree_8c" local="no">splay_tree.c</includedby>
+    <includedby refid="test_8c" local="no">test.c</includedby>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="splay__tree_8h_1a63ae18d1e62ef66f2b7e5e76cd04a27f" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int node_elem</definition>
+        <argsstring></argsstring>
+        <name>node_elem</name>
+        <briefdescription>
+<para>It is type of objects stored in splay tree. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/include/splay_tree.h" line="42" column="1" bodyfile="/home/chaperone/Documents/Programs/Lunev/splay_tree/include/splay_tree.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="splay__tree_8h_1adcfee39dc0f7f5e13313c7413093d98b" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int node_key</definition>
+        <argsstring></argsstring>
+        <name>node_key</name>
+        <briefdescription>
+<para>It is key, that you must use for any operation with tree. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/include/splay_tree.h" line="47" column="1" bodyfile="/home/chaperone/Documents/Programs/Lunev/splay_tree/include/splay_tree.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="splay__tree_8h_1aeac028ec68c6cd3a5dbe98a729927067" prot="public" static="no">
+        <type>struct <ref refid="structsplay__tree__t" kindref="compound">splay_tree_t</ref></type>
+        <definition>typedef struct splay_tree_t splay_tree</definition>
+        <argsstring></argsstring>
+        <name>splay_tree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/include/splay_tree.h" line="57" column="1" bodyfile="/home/chaperone/Documents/Programs/Lunev/splay_tree/include/splay_tree.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="splay__tree_8h_1ab2d3aba6d0a6d310e3f391c5f1fef6db" prot="public" static="no" mutable="no">
+        <type>const <ref refid="splay__tree_8h_1a63ae18d1e62ef66f2b7e5e76cd04a27f" kindref="member">node_elem</ref></type>
+        <definition>const node_elem NULL_NELEM</definition>
+        <argsstring></argsstring>
+        <name>NULL_NELEM</name>
+        <briefdescription>
+<para>It is object, that will return if isn&apos;t element, that you&apos;ve found. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/include/splay_tree.h" line="52" column="1" bodyfile="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="splay__tree_8h_1ad6e70e55dc3e1a45628016a76ce823e4" prot="public" static="no" mutable="no">
+        <type>const <ref refid="splay__tree_8h_1adcfee39dc0f7f5e13313c7413093d98b" kindref="member">node_key</ref></type>
+        <definition>const node_key ERR_NELEM</definition>
+        <argsstring></argsstring>
+        <name>ERR_NELEM</name>
+        <briefdescription>
+<para>It is object, that will return if function want return error. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/include/splay_tree.h" line="57" column="1" bodyfile="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="splay__tree_8h_1a0086993090dee397aa266a132569d555" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structsplay__tree__t" kindref="compound">splay_tree</ref> *</type>
+        <definition>splay_tree* splay_tree_create</definition>
+        <argsstring>(node_key(*get_key)(node_elem elem))</argsstring>
+        <name>splay_tree_create</name>
+        <param>
+          <type><ref refid="splay__tree_8h_1adcfee39dc0f7f5e13313c7413093d98b" kindref="member">node_key</ref>(*)(<ref refid="splay__tree_8h_1a63ae18d1e62ef66f2b7e5e76cd04a27f" kindref="member">node_elem</ref> elem)</type>
+          <declname>get_key</declname>
+        </param>
+        <briefdescription>
+<para>Create splay tree. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">get_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function, that return key for every object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to created splay tree.It return NULL and set errno in ENOMEM, if It isn&apos;t memory. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/include/splay_tree.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="splay__tree_8h_1a6a387effe045024d0cae83bc5c88b20e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int splay_tree_delete</definition>
+        <argsstring>(splay_tree *tr)</argsstring>
+        <name>splay_tree_delete</name>
+        <param>
+          <type><ref refid="structsplay__tree__t" kindref="compound">splay_tree</ref> *</type>
+          <declname>tr</declname>
+        </param>
+        <briefdescription>
+<para>Delete splay tree. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to existing splay tree. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if succes. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/include/splay_tree.h" line="74" column="1" bodyfile="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" bodystart="296" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="splay__tree_8h_1a3a3969a2ca409834fcbc7dd7272fcfd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int splay_tree_insert</definition>
+        <argsstring>(splay_tree *tr, node_elem new_elem)</argsstring>
+        <name>splay_tree_insert</name>
+        <param>
+          <type><ref refid="structsplay__tree__t" kindref="compound">splay_tree</ref> *</type>
+          <declname>tr</declname>
+        </param>
+        <param>
+          <type><ref refid="splay__tree_8h_1a63ae18d1e62ef66f2b7e5e76cd04a27f" kindref="member">node_elem</ref></type>
+          <declname>new_elem</declname>
+        </param>
+        <briefdescription>
+<para>Insert object in splay tree. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to existing splay tree. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_elem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data of new tree element. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if succes, -1 if failed and set errno. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/include/splay_tree.h" line="82" column="1" bodyfile="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" bodystart="311" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="splay__tree_8h_1a339a3d41a67650e7aa4515d60b0bae30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int splay_tree_remove</definition>
+        <argsstring>(splay_tree *tr, node_key key)</argsstring>
+        <name>splay_tree_remove</name>
+        <param>
+          <type><ref refid="structsplay__tree__t" kindref="compound">splay_tree</ref> *</type>
+          <declname>tr</declname>
+        </param>
+        <param>
+          <type><ref refid="splay__tree_8h_1adcfee39dc0f7f5e13313c7413093d98b" kindref="member">node_key</ref></type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Remove object from splay tree. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to existing splay tree. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key of splay tree element. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if succes, -1 if failed and set errno. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/include/splay_tree.h" line="90" column="1" bodyfile="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" bodystart="337" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="splay__tree_8h_1ad26b991760d97b2a784c985b9d85aee7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="splay__tree_8h_1a63ae18d1e62ef66f2b7e5e76cd04a27f" kindref="member">node_elem</ref></type>
+        <definition>node_elem splay_tree_find</definition>
+        <argsstring>(splay_tree *tr, node_key key)</argsstring>
+        <name>splay_tree_find</name>
+        <param>
+          <type><ref refid="structsplay__tree__t" kindref="compound">splay_tree</ref> *</type>
+          <declname>tr</declname>
+        </param>
+        <param>
+          <type><ref refid="splay__tree_8h_1adcfee39dc0f7f5e13313c7413093d98b" kindref="member">node_key</ref></type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Find object in splay tree. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to existing splay tree. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key of splay tree element. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Founded element if it exist, NULL_NELEM if not. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/include/splay_tree.h" line="98" column="1" bodyfile="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" bodystart="352" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="splay__tree_8h_1a469b82470eb7b11bac82b1d8bcf6ebc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int splay_tree_for_each_elem</definition>
+        <argsstring>(splay_tree *tr, int(*callback)(splay_tree *tr, node_elem *elem, node_key *key, void *data), void *data)</argsstring>
+        <name>splay_tree_for_each_elem</name>
+        <param>
+          <type><ref refid="structsplay__tree__t" kindref="compound">splay_tree</ref> *</type>
+          <declname>tr</declname>
+        </param>
+        <param>
+          <type>int(*)(<ref refid="structsplay__tree__t" kindref="compound">splay_tree</ref> *tr, <ref refid="splay__tree_8h_1a63ae18d1e62ef66f2b7e5e76cd04a27f" kindref="member">node_elem</ref> *elem, <ref refid="splay__tree_8h_1adcfee39dc0f7f5e13313c7413093d98b" kindref="member">node_key</ref> *key, void *data)</type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Do function for every object in splay tree. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to existing splay tree. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function, that will launch for every object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Argument for callback. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Last callback returned code. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/include/splay_tree.h" line="107" column="1" bodyfile="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" bodystart="369" bodyend="385"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Header file for Splay Tree library. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Kireev Klim </para></simplesect>
+<simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="date"><para>04.03.2016 </para></simplesect>
+<simplesect kind="copyright"><para>GPL 3.0 </para></simplesect>
+<simplesect kind="warning"><para>Is was written by me for studies purpose. Use it at your own risk. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>a<sp/>my<sp/>splay<sp/>tree<sp/>library<sp/>:)</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2016<sp/><sp/>Kireev<sp/>Klim</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>My<sp/>email:<sp/>proffk@linux.com</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__SPLAY_TREE__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SPLAY_TREE__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="splay__tree_8h_1a63ae18d1e62ef66f2b7e5e76cd04a27f" refkind="member"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsplay__tree__t" kindref="compound">splay_tree_t</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="splay__tree_8h_1a63ae18d1e62ef66f2b7e5e76cd04a27f" kindref="member">node_elem</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="splay__tree_8h_1adcfee39dc0f7f5e13313c7413093d98b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="splay__tree_8h_1adcfee39dc0f7f5e13313c7413093d98b" kindref="member">node_key</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="splay__tree_8h_1a63ae18d1e62ef66f2b7e5e76cd04a27f" kindref="member">node_elem</ref><sp/><ref refid="splay__tree_8h_1ab2d3aba6d0a6d310e3f391c5f1fef6db" kindref="member">NULL_NELEM</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="splay__tree_8h_1adcfee39dc0f7f5e13313c7413093d98b" kindref="member">node_key</ref><sp/><ref refid="splay__tree_8h_1ad6e70e55dc3e1a45628016a76ce823e4" kindref="member">ERR_NELEM</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsplay__tree__t" kindref="compound">splay_tree_t</ref><sp/><ref refid="structsplay__tree__t" kindref="compound">splay_tree</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><ref refid="structsplay__tree__t" kindref="compound">splay_tree</ref>*<sp/><ref refid="splay__tree_8h_1a0086993090dee397aa266a132569d555" kindref="member">splay_tree_create</ref>(<ref refid="splay__tree_8h_1adcfee39dc0f7f5e13313c7413093d98b" kindref="member">node_key</ref><sp/>(*get_key)<sp/>(<ref refid="splay__tree_8h_1a63ae18d1e62ef66f2b7e5e76cd04a27f" kindref="member">node_elem</ref><sp/>elem));</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="splay__tree_8h_1a6a387effe045024d0cae83bc5c88b20e" kindref="member">splay_tree_delete</ref>(<ref refid="structsplay__tree__t" kindref="compound">splay_tree</ref>*<sp/>tr);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="splay__tree_8h_1a3a3969a2ca409834fcbc7dd7272fcfd9" kindref="member">splay_tree_insert</ref>(<ref refid="structsplay__tree__t" kindref="compound">splay_tree</ref>*<sp/>tr,<sp/><ref refid="splay__tree_8h_1a63ae18d1e62ef66f2b7e5e76cd04a27f" kindref="member">node_elem</ref><sp/>new_elem);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="splay__tree_8h_1a339a3d41a67650e7aa4515d60b0bae30" kindref="member">splay_tree_remove</ref>(<ref refid="structsplay__tree__t" kindref="compound">splay_tree</ref>*<sp/>tr,<sp/><ref refid="splay__tree_8h_1adcfee39dc0f7f5e13313c7413093d98b" kindref="member">node_key</ref><sp/>key);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><ref refid="splay__tree_8h_1a63ae18d1e62ef66f2b7e5e76cd04a27f" kindref="member">node_elem</ref><sp/><ref refid="splay__tree_8h_1ad26b991760d97b2a784c985b9d85aee7" kindref="member">splay_tree_find</ref>(<ref refid="structsplay__tree__t" kindref="compound">splay_tree</ref>*<sp/>tr,<sp/><ref refid="splay__tree_8h_1adcfee39dc0f7f5e13313c7413093d98b" kindref="member">node_key</ref><sp/>key);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="splay__tree_8h_1a469b82470eb7b11bac82b1d8bcf6ebc9" kindref="member">splay_tree_for_each_elem</ref>(<ref refid="structsplay__tree__t" kindref="compound">splay_tree</ref>*<sp/>tr,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>(*callback)<sp/>(<ref refid="structsplay__tree__t" kindref="compound">splay_tree</ref>*<sp/>tr,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="splay__tree_8h_1a63ae18d1e62ef66f2b7e5e76cd04a27f" kindref="member">node_elem</ref>*<sp/>elem,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="splay__tree_8h_1adcfee39dc0f7f5e13313c7413093d98b" kindref="member">node_key</ref>*<sp/>key,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data),</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/include/splay_tree.h"/>
+  </compounddef>
+</doxygen>

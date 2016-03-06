@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.9.1">
+  <compound refid="structnode__t" kind="struct"><name>node_t</name>
+    <member refid="structnode__t_1ae3ce583073f3fd0a7cfd4ec3d6914537" kind="variable"><name>left</name></member>
+    <member refid="structnode__t_1a88ddc7d90adda8cc75b1e45dd5a58258" kind="variable"><name>right</name></member>
+    <member refid="structnode__t_1ab129d4876b839cd51f0603a367d48b65" kind="variable"><name>parent</name></member>
+    <member refid="structnode__t_1a38d892c5472f7bfa3246ceb3ddda7732" kind="variable"><name>data</name></member>
+    <member refid="structnode__t_1a0a0db3ac2d60fc34a711ead8d0227779" kind="variable"><name>key</name></member>
+  </compound>
+  <compound refid="structsplay__tree__t" kind="struct"><name>splay_tree_t</name>
+    <member refid="structsplay__tree__t_1aa570215f2f913275d6ff0d586e436d21" kind="variable"><name>root</name></member>
+    <member refid="structsplay__tree__t_1aaf8bcc7f18b38c4e4ec1663c7589dd56" kind="variable"><name>get_key</name></member>
+  </compound>
+  <compound refid="splay__tree_8h" kind="file"><name>splay_tree.h</name>
+    <member refid="splay__tree_8h_1a63ae18d1e62ef66f2b7e5e76cd04a27f" kind="typedef"><name>node_elem</name></member>
+    <member refid="splay__tree_8h_1adcfee39dc0f7f5e13313c7413093d98b" kind="typedef"><name>node_key</name></member>
+    <member refid="splay__tree_8h_1aeac028ec68c6cd3a5dbe98a729927067" kind="typedef"><name>splay_tree</name></member>
+    <member refid="splay__tree_8h_1ab2d3aba6d0a6d310e3f391c5f1fef6db" kind="variable"><name>NULL_NELEM</name></member>
+    <member refid="splay__tree_8h_1ad6e70e55dc3e1a45628016a76ce823e4" kind="variable"><name>ERR_NELEM</name></member>
+    <member refid="splay__tree_8h_1a0086993090dee397aa266a132569d555" kind="function"><name>splay_tree_create</name></member>
+    <member refid="splay__tree_8h_1a6a387effe045024d0cae83bc5c88b20e" kind="function"><name>splay_tree_delete</name></member>
+    <member refid="splay__tree_8h_1a3a3969a2ca409834fcbc7dd7272fcfd9" kind="function"><name>splay_tree_insert</name></member>
+    <member refid="splay__tree_8h_1a339a3d41a67650e7aa4515d60b0bae30" kind="function"><name>splay_tree_remove</name></member>
+    <member refid="splay__tree_8h_1ad26b991760d97b2a784c985b9d85aee7" kind="function"><name>splay_tree_find</name></member>
+    <member refid="splay__tree_8h_1a469b82470eb7b11bac82b1d8bcf6ebc9" kind="function"><name>splay_tree_for_each_elem</name></member>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="splay__tree_8c" kind="file"><name>splay_tree.c</name>
+    <member refid="splay__tree_8c_1a14b252ee8e2d4f6817248bcde4300a31" kind="define"><name>ERR_EXIT</name></member>
+    <member refid="splay__tree_8c_1a85b4f4124a5616dea92c9e8a221a8db5" kind="typedef"><name>node</name></member>
+    <member refid="splay__tree_8c_1aeac028ec68c6cd3a5dbe98a729927067" kind="typedef"><name>splay_tree</name></member>
+    <member refid="splay__tree_8c_1ab2d3aba6d0a6d310e3f391c5f1fef6db" kind="variable"><name>NULL_NELEM</name></member>
+    <member refid="splay__tree_8c_1ad6e70e55dc3e1a45628016a76ce823e4" kind="variable"><name>ERR_NELEM</name></member>
+    <member refid="splay__tree_8c_1a3700a23b38b1f8ff156966e65ccc9c0d" kind="function"><name>node_create</name></member>
+    <member refid="splay__tree_8c_1a5b4546ef0066ca3fd7d1e76cb53f5bba" kind="function"><name>node_delete</name></member>
+    <member refid="splay__tree_8c_1a5d89f9ac9c1ce34ea6c180d8e88e135f" kind="function"><name>set_parent</name></member>
+    <member refid="splay__tree_8c_1a4dd04c606600dfe2f226ca4ce10a750d" kind="function"><name>keep_parent</name></member>
+    <member refid="splay__tree_8c_1a81773d5bae2aa8561b4576b5b886569b" kind="function"><name>rotate</name></member>
+    <member refid="splay__tree_8c_1adfd497079b99938335b3029e9a1239bb" kind="function"><name>node_splay</name></member>
+    <member refid="splay__tree_8c_1a8b002ff49aacfb7a76c0a4d921cf1731" kind="function"><name>node_find</name></member>
+    <member refid="splay__tree_8c_1aeae9462b2c09ed7027e2060f30aa5c29" kind="function"><name>node_split</name></member>
+    <member refid="splay__tree_8c_1af437d54892609151b78defffe4019ee6" kind="function"><name>node_insert</name></member>
+    <member refid="splay__tree_8c_1a9930389f7a5d90027fe25c24b8900230" kind="function"><name>node_merge</name></member>
+    <member refid="splay__tree_8c_1a9535fd2c400a7ebd146af7953e234f39" kind="function"><name>node_remove</name></member>
+    <member refid="splay__tree_8c_1a1e62414ead08a48cc410abd8dae6c102" kind="function"><name>node_for_each_elem</name></member>
+    <member refid="splay__tree_8c_1a2d55b353de09995d080a73650cddaf4b" kind="function"><name>splay_tree_create</name></member>
+    <member refid="splay__tree_8c_1a6a387effe045024d0cae83bc5c88b20e" kind="function"><name>splay_tree_delete</name></member>
+    <member refid="splay__tree_8c_1a3a3969a2ca409834fcbc7dd7272fcfd9" kind="function"><name>splay_tree_insert</name></member>
+    <member refid="splay__tree_8c_1a339a3d41a67650e7aa4515d60b0bae30" kind="function"><name>splay_tree_remove</name></member>
+    <member refid="splay__tree_8c_1ad26b991760d97b2a784c985b9d85aee7" kind="function"><name>splay_tree_find</name></member>
+    <member refid="splay__tree_8c_1a469b82470eb7b11bac82b1d8bcf6ebc9" kind="function"><name>splay_tree_for_each_elem</name></member>
+  </compound>
+  <compound refid="splay__tree_8d" kind="file"><name>splay_tree.d</name>
+  </compound>
+  <compound refid="test_8c" kind="file"><name>test.c</name>
+    <member refid="test_8c_1a4f4f2a2155a82f9881b227d0cc9b5bb3" kind="define"><name>TEST_CHECK</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15" kind="enum"><name>tests</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15aa6a67d1b0fabc23213ccb16dde3f6340" kind="enumvalue"><name>CR_TEST_0</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15a3c46440bd424ceb03755a0dd8d272db5" kind="enumvalue"><name>CR_TEST_1</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15a87834f9fdca91358010aa5ee6c094edb" kind="enumvalue"><name>CR_TEST_2</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15a41d9456e27c1e3fa4c260a8693200a21" kind="enumvalue"><name>DL_TEST_0</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15a3e11ef4579ee471c577b4e778eb8ac74" kind="enumvalue"><name>DL_TEST_1</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15a19794a16a2b57411f9bcce7163ef6bb4" kind="enumvalue"><name>DL_TEST_2</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15ae74647d79dc1ec8065eb222f3f6f057f" kind="enumvalue"><name>INS_TEST_0</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15a56e5eded4de5ed3d0ef527f7a137e473" kind="enumvalue"><name>INS_TEST_1</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15aa51ba0f430615a7f1ea2688da0dbb0b9" kind="enumvalue"><name>INS_TEST_2</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15abb05ddda5b4037c9062b15af3814443c" kind="enumvalue"><name>INS_TEST_3</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15afecb2e244ea0dd50050dd0d6c624fd3e" kind="enumvalue"><name>FIND_TEST_0</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15aa92cc815992981cca83a1a3af9b510cc" kind="enumvalue"><name>FIND_TEST_1</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15a0c0741dc9c5895c5256f79679e5e7ed9" kind="enumvalue"><name>FIND_TEST_2</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15a965c7c0bf7ac5e9ecb304fc984cab9ec" kind="enumvalue"><name>FIND_TEST_3</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15ac582b7bf558175f5cdc79c56b6b872a1" kind="enumvalue"><name>REM_TEST_0</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15a71667909ee4e1ce92338ce8794b486a0" kind="enumvalue"><name>REM_TEST_1</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15ad7a73ce10609ead340152886e6ba1e3d" kind="enumvalue"><name>REM_TEST_2</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15aeffdf693770f94a7d178263ea81878ac" kind="enumvalue"><name>REM_TEST_3</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15af2acf2c79998f466d18e81b3cffe1859" kind="enumvalue"><name>FOR_TEST_0</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15a3493e46390e5e91da3d10fdd0b201088" kind="enumvalue"><name>FOR_TEST_1</name></member>
+    <member refid="test_8c_1aa58c6e40436bbb090294218b7d758a15a9c206bf3bddb6826127eeb7e71824f12" kind="enumvalue"><name>FOR_TEST_2</name></member>
+    <member refid="test_8c_1acacc466c5f54e89b133baada202b96c4" kind="function"><name>test_get_key</name></member>
+    <member refid="test_8c_1a8c4b3fa1f319dd684e57b67ac9e8fa18" kind="function"><name>callback</name></member>
+    <member refid="test_8c_1a466504436cc93f215bdb4f8405e96476" kind="function"><name>cr_del_test</name></member>
+    <member refid="test_8c_1a4f2796f9ec9079eb510f165d1be14b2c" kind="function"><name>ins_find_test</name></member>
+    <member refid="test_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="test_8d" kind="file"><name>test.d</name>
+  </compound>
+  <compound refid="md__r_e_a_d_m_e" kind="page"><name>md_README</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+</doxygenindex>

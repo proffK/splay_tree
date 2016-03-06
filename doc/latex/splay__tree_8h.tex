@@ -1,0 +1,195 @@
+\hypertarget{splay__tree_8h}{}\section{include/splay\+\_\+tree.h File Reference}
+\label{splay__tree_8h}\index{include/splay\+\_\+tree.\+h@{include/splay\+\_\+tree.\+h}}
+
+
+Header file for Splay Tree library.  
+
+
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{splay__tree_8h_a63ae18d1e62ef66f2b7e5e76cd04a27f}{}typedef int \hyperlink{splay__tree_8h_a63ae18d1e62ef66f2b7e5e76cd04a27f}{node\+\_\+elem}\label{splay__tree_8h_a63ae18d1e62ef66f2b7e5e76cd04a27f}
+
+\begin{DoxyCompactList}\small\item\em It is type of objects stored in splay tree. \end{DoxyCompactList}\item 
+\hypertarget{splay__tree_8h_adcfee39dc0f7f5e13313c7413093d98b}{}typedef int \hyperlink{splay__tree_8h_adcfee39dc0f7f5e13313c7413093d98b}{node\+\_\+key}\label{splay__tree_8h_adcfee39dc0f7f5e13313c7413093d98b}
+
+\begin{DoxyCompactList}\small\item\em It is key, that you must use for any operation with tree. \end{DoxyCompactList}\item 
+\hypertarget{splay__tree_8h_aeac028ec68c6cd3a5dbe98a729927067}{}typedef struct \hyperlink{structsplay__tree__t}{splay\+\_\+tree\+\_\+t} {\bfseries splay\+\_\+tree}\label{splay__tree_8h_aeac028ec68c6cd3a5dbe98a729927067}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structsplay__tree__t}{splay\+\_\+tree} $\ast$ \hyperlink{splay__tree_8h_a0086993090dee397aa266a132569d555}{splay\+\_\+tree\+\_\+create} (\hyperlink{splay__tree_8h_adcfee39dc0f7f5e13313c7413093d98b}{node\+\_\+key}($\ast$get\+\_\+key)(\hyperlink{splay__tree_8h_a63ae18d1e62ef66f2b7e5e76cd04a27f}{node\+\_\+elem} elem))
+\begin{DoxyCompactList}\small\item\em Create splay tree. \end{DoxyCompactList}\item 
+int \hyperlink{splay__tree_8h_a6a387effe045024d0cae83bc5c88b20e}{splay\+\_\+tree\+\_\+delete} (\hyperlink{structsplay__tree__t}{splay\+\_\+tree} $\ast$tr)
+\begin{DoxyCompactList}\small\item\em Delete splay tree. \end{DoxyCompactList}\item 
+int \hyperlink{splay__tree_8h_a3a3969a2ca409834fcbc7dd7272fcfd9}{splay\+\_\+tree\+\_\+insert} (\hyperlink{structsplay__tree__t}{splay\+\_\+tree} $\ast$tr, \hyperlink{splay__tree_8h_a63ae18d1e62ef66f2b7e5e76cd04a27f}{node\+\_\+elem} new\+\_\+elem)
+\begin{DoxyCompactList}\small\item\em Insert object in splay tree. \end{DoxyCompactList}\item 
+int \hyperlink{splay__tree_8h_a339a3d41a67650e7aa4515d60b0bae30}{splay\+\_\+tree\+\_\+remove} (\hyperlink{structsplay__tree__t}{splay\+\_\+tree} $\ast$tr, \hyperlink{splay__tree_8h_adcfee39dc0f7f5e13313c7413093d98b}{node\+\_\+key} key)
+\begin{DoxyCompactList}\small\item\em Remove object from splay tree. \end{DoxyCompactList}\item 
+\hyperlink{splay__tree_8h_a63ae18d1e62ef66f2b7e5e76cd04a27f}{node\+\_\+elem} \hyperlink{splay__tree_8h_ad26b991760d97b2a784c985b9d85aee7}{splay\+\_\+tree\+\_\+find} (\hyperlink{structsplay__tree__t}{splay\+\_\+tree} $\ast$tr, \hyperlink{splay__tree_8h_adcfee39dc0f7f5e13313c7413093d98b}{node\+\_\+key} key)
+\begin{DoxyCompactList}\small\item\em Find object in splay tree. \end{DoxyCompactList}\item 
+int \hyperlink{splay__tree_8h_a469b82470eb7b11bac82b1d8bcf6ebc9}{splay\+\_\+tree\+\_\+for\+\_\+each\+\_\+elem} (\hyperlink{structsplay__tree__t}{splay\+\_\+tree} $\ast$tr, int($\ast$callback)(\hyperlink{structsplay__tree__t}{splay\+\_\+tree} $\ast$tr, \hyperlink{splay__tree_8h_a63ae18d1e62ef66f2b7e5e76cd04a27f}{node\+\_\+elem} $\ast$elem, \hyperlink{splay__tree_8h_adcfee39dc0f7f5e13313c7413093d98b}{node\+\_\+key} $\ast$key, void $\ast$data), void $\ast$data)
+\begin{DoxyCompactList}\small\item\em Do function for every object in splay tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{splay__tree_8h_ab2d3aba6d0a6d310e3f391c5f1fef6db}{}const \hyperlink{splay__tree_8h_a63ae18d1e62ef66f2b7e5e76cd04a27f}{node\+\_\+elem} \hyperlink{splay__tree_8h_ab2d3aba6d0a6d310e3f391c5f1fef6db}{N\+U\+L\+L\+\_\+\+N\+E\+L\+E\+M}\label{splay__tree_8h_ab2d3aba6d0a6d310e3f391c5f1fef6db}
+
+\begin{DoxyCompactList}\small\item\em It is object, that will return if isn\textquotesingle{}t element, that you\textquotesingle{}ve found. \end{DoxyCompactList}\item 
+\hypertarget{splay__tree_8h_ad6e70e55dc3e1a45628016a76ce823e4}{}const \hyperlink{splay__tree_8h_adcfee39dc0f7f5e13313c7413093d98b}{node\+\_\+key} \hyperlink{splay__tree_8h_ad6e70e55dc3e1a45628016a76ce823e4}{E\+R\+R\+\_\+\+N\+E\+L\+E\+M}\label{splay__tree_8h_ad6e70e55dc3e1a45628016a76ce823e4}
+
+\begin{DoxyCompactList}\small\item\em It is object, that will return if function want return error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header file for Splay Tree library. 
+
+\begin{DoxyAuthor}{Author}
+Kireev Klim 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+04.\+03.\+2016 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+P\+L 3.\+0 
+\end{DoxyCopyright}
+\begin{DoxyWarning}{Warning}
+Is was written by me for studies purpose. Use it at your own risk. 
+\end{DoxyWarning}
+
+
+\subsection{Function Documentation}
+\hypertarget{splay__tree_8h_a0086993090dee397aa266a132569d555}{}\index{splay\+\_\+tree.\+h@{splay\+\_\+tree.\+h}!splay\+\_\+tree\+\_\+create@{splay\+\_\+tree\+\_\+create}}
+\index{splay\+\_\+tree\+\_\+create@{splay\+\_\+tree\+\_\+create}!splay\+\_\+tree.\+h@{splay\+\_\+tree.\+h}}
+\subsubsection[{splay\+\_\+tree\+\_\+create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf splay\+\_\+tree}$\ast$ splay\+\_\+tree\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{{\bf node\+\_\+key}($\ast$)({\bf node\+\_\+elem} elem)}]{get\+\_\+key}
+\end{DoxyParamCaption}
+)}\label{splay__tree_8h_a0086993090dee397aa266a132569d555}
+
+
+Create splay tree. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em get\+\_\+key} & Function, that return key for every object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to created splay tree.\+It return N\+U\+L\+L and set errno in E\+N\+O\+M\+E\+M, if It isn\textquotesingle{}t memory. 
+\end{DoxyReturn}
+\hypertarget{splay__tree_8h_a6a387effe045024d0cae83bc5c88b20e}{}\index{splay\+\_\+tree.\+h@{splay\+\_\+tree.\+h}!splay\+\_\+tree\+\_\+delete@{splay\+\_\+tree\+\_\+delete}}
+\index{splay\+\_\+tree\+\_\+delete@{splay\+\_\+tree\+\_\+delete}!splay\+\_\+tree.\+h@{splay\+\_\+tree.\+h}}
+\subsubsection[{splay\+\_\+tree\+\_\+delete}]{\setlength{\rightskip}{0pt plus 5cm}int splay\+\_\+tree\+\_\+delete (
+\begin{DoxyParamCaption}
+\item[{{\bf splay\+\_\+tree} $\ast$}]{tr}
+\end{DoxyParamCaption}
+)}\label{splay__tree_8h_a6a387effe045024d0cae83bc5c88b20e}
+
+
+Delete splay tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tr} & Pointer to existing splay tree. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if succes. 
+\end{DoxyReturn}
+\hypertarget{splay__tree_8h_ad26b991760d97b2a784c985b9d85aee7}{}\index{splay\+\_\+tree.\+h@{splay\+\_\+tree.\+h}!splay\+\_\+tree\+\_\+find@{splay\+\_\+tree\+\_\+find}}
+\index{splay\+\_\+tree\+\_\+find@{splay\+\_\+tree\+\_\+find}!splay\+\_\+tree.\+h@{splay\+\_\+tree.\+h}}
+\subsubsection[{splay\+\_\+tree\+\_\+find}]{\setlength{\rightskip}{0pt plus 5cm}{\bf node\+\_\+elem} splay\+\_\+tree\+\_\+find (
+\begin{DoxyParamCaption}
+\item[{{\bf splay\+\_\+tree} $\ast$}]{tr, }
+\item[{{\bf node\+\_\+key}}]{key}
+\end{DoxyParamCaption}
+)}\label{splay__tree_8h_ad26b991760d97b2a784c985b9d85aee7}
+
+
+Find object in splay tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tr} & Pointer to existing splay tree. \\
+\hline
+{\em key} & Key of splay tree element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Founded element if it exist, N\+U\+L\+L\+\_\+\+N\+E\+L\+E\+M if not. 
+\end{DoxyReturn}
+\hypertarget{splay__tree_8h_a469b82470eb7b11bac82b1d8bcf6ebc9}{}\index{splay\+\_\+tree.\+h@{splay\+\_\+tree.\+h}!splay\+\_\+tree\+\_\+for\+\_\+each\+\_\+elem@{splay\+\_\+tree\+\_\+for\+\_\+each\+\_\+elem}}
+\index{splay\+\_\+tree\+\_\+for\+\_\+each\+\_\+elem@{splay\+\_\+tree\+\_\+for\+\_\+each\+\_\+elem}!splay\+\_\+tree.\+h@{splay\+\_\+tree.\+h}}
+\subsubsection[{splay\+\_\+tree\+\_\+for\+\_\+each\+\_\+elem}]{\setlength{\rightskip}{0pt plus 5cm}int splay\+\_\+tree\+\_\+for\+\_\+each\+\_\+elem (
+\begin{DoxyParamCaption}
+\item[{{\bf splay\+\_\+tree} $\ast$}]{tr, }
+\item[{int($\ast$)({\bf splay\+\_\+tree} $\ast$tr, {\bf node\+\_\+elem} $\ast$elem, {\bf node\+\_\+key} $\ast$key, void $\ast$data)}]{callback, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\label{splay__tree_8h_a469b82470eb7b11bac82b1d8bcf6ebc9}
+
+
+Do function for every object in splay tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tr} & Pointer to existing splay tree. \\
+\hline
+{\em callback} & Function, that will launch for every object. \\
+\hline
+{\em data} & Argument for callback. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Last callback returned code. 
+\end{DoxyReturn}
+\hypertarget{splay__tree_8h_a3a3969a2ca409834fcbc7dd7272fcfd9}{}\index{splay\+\_\+tree.\+h@{splay\+\_\+tree.\+h}!splay\+\_\+tree\+\_\+insert@{splay\+\_\+tree\+\_\+insert}}
+\index{splay\+\_\+tree\+\_\+insert@{splay\+\_\+tree\+\_\+insert}!splay\+\_\+tree.\+h@{splay\+\_\+tree.\+h}}
+\subsubsection[{splay\+\_\+tree\+\_\+insert}]{\setlength{\rightskip}{0pt plus 5cm}int splay\+\_\+tree\+\_\+insert (
+\begin{DoxyParamCaption}
+\item[{{\bf splay\+\_\+tree} $\ast$}]{tr, }
+\item[{{\bf node\+\_\+elem}}]{new\+\_\+elem}
+\end{DoxyParamCaption}
+)}\label{splay__tree_8h_a3a3969a2ca409834fcbc7dd7272fcfd9}
+
+
+Insert object in splay tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tr} & Pointer to existing splay tree. \\
+\hline
+{\em new\+\_\+elem} & Data of new tree element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if succes, -\/1 if failed and set errno. 
+\end{DoxyReturn}
+\hypertarget{splay__tree_8h_a339a3d41a67650e7aa4515d60b0bae30}{}\index{splay\+\_\+tree.\+h@{splay\+\_\+tree.\+h}!splay\+\_\+tree\+\_\+remove@{splay\+\_\+tree\+\_\+remove}}
+\index{splay\+\_\+tree\+\_\+remove@{splay\+\_\+tree\+\_\+remove}!splay\+\_\+tree.\+h@{splay\+\_\+tree.\+h}}
+\subsubsection[{splay\+\_\+tree\+\_\+remove}]{\setlength{\rightskip}{0pt plus 5cm}int splay\+\_\+tree\+\_\+remove (
+\begin{DoxyParamCaption}
+\item[{{\bf splay\+\_\+tree} $\ast$}]{tr, }
+\item[{{\bf node\+\_\+key}}]{key}
+\end{DoxyParamCaption}
+)}\label{splay__tree_8h_a339a3d41a67650e7aa4515d60b0bae30}
+
+
+Remove object from splay tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tr} & Pointer to existing splay tree. \\
+\hline
+{\em key} & Key of splay tree element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if succes, -\/1 if failed and set errno. 
+\end{DoxyReturn}

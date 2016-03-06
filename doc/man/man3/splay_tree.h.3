@@ -1,0 +1,207 @@
+.TH "include/splay_tree.h" 3 "Mon Mar 7 2016" "Version 1.0" "Splay tree library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/splay_tree.h \- Header file for Splay Tree library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef int \fBnode_elem\fP"
+.br
+.RI "\fIIt is type of objects stored in splay tree\&. \fP"
+.ti -1c
+.RI "typedef int \fBnode_key\fP"
+.br
+.RI "\fIIt is key, that you must use for any operation with tree\&. \fP"
+.ti -1c
+.RI "typedef struct \fBsplay_tree_t\fP \fBsplay_tree\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBsplay_tree\fP * \fBsplay_tree_create\fP (\fBnode_key\fP(*get_key)(\fBnode_elem\fP elem))"
+.br
+.RI "\fICreate splay tree\&. \fP"
+.ti -1c
+.RI "int \fBsplay_tree_delete\fP (\fBsplay_tree\fP *tr)"
+.br
+.RI "\fIDelete splay tree\&. \fP"
+.ti -1c
+.RI "int \fBsplay_tree_insert\fP (\fBsplay_tree\fP *tr, \fBnode_elem\fP new_elem)"
+.br
+.RI "\fIInsert object in splay tree\&. \fP"
+.ti -1c
+.RI "int \fBsplay_tree_remove\fP (\fBsplay_tree\fP *tr, \fBnode_key\fP key)"
+.br
+.RI "\fIRemove object from splay tree\&. \fP"
+.ti -1c
+.RI "\fBnode_elem\fP \fBsplay_tree_find\fP (\fBsplay_tree\fP *tr, \fBnode_key\fP key)"
+.br
+.RI "\fIFind object in splay tree\&. \fP"
+.ti -1c
+.RI "int \fBsplay_tree_for_each_elem\fP (\fBsplay_tree\fP *tr, int(*callback)(\fBsplay_tree\fP *tr, \fBnode_elem\fP *elem, \fBnode_key\fP *key, void *data), void *data)"
+.br
+.RI "\fIDo function for every object in splay tree\&. \fP"
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBnode_elem\fP \fBNULL_NELEM\fP"
+.br
+.RI "\fIIt is object, that will return if isn't element, that you've found\&. \fP"
+.ti -1c
+.RI "const \fBnode_key\fP \fBERR_NELEM\fP"
+.br
+.RI "\fIIt is object, that will return if function want return error\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Header file for Splay Tree library\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Kireev Klim 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+04\&.03\&.2016 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+GPL 3\&.0 
+.RE
+.PP
+\fBWarning:\fP
+.RS 4
+Is was written by me for studies purpose\&. Use it at your own risk\&. 
+.RE
+.PP
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBsplay_tree\fP* splay_tree_create (\fBnode_key\fP(*)(\fBnode_elem\fP elem) get_key)"
+
+.PP
+Create splay tree\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIget_key\fP Function, that return key for every object\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Pointer to created splay tree\&.It return NULL and set errno in ENOMEM, if It isn't memory\&. 
+.RE
+.PP
+
+.SS "int splay_tree_delete (\fBsplay_tree\fP * tr)"
+
+.PP
+Delete splay tree\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItr\fP Pointer to existing splay tree\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+0 if succes\&. 
+.RE
+.PP
+
+.SS "\fBnode_elem\fP splay_tree_find (\fBsplay_tree\fP * tr, \fBnode_key\fP key)"
+
+.PP
+Find object in splay tree\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItr\fP Pointer to existing splay tree\&. 
+.br
+\fIkey\fP Key of splay tree element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Founded element if it exist, NULL_NELEM if not\&. 
+.RE
+.PP
+
+.SS "int splay_tree_for_each_elem (\fBsplay_tree\fP * tr, int(*)(\fBsplay_tree\fP *tr, \fBnode_elem\fP *elem, \fBnode_key\fP *key, void *data) callback, void * data)"
+
+.PP
+Do function for every object in splay tree\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItr\fP Pointer to existing splay tree\&. 
+.br
+\fIcallback\fP Function, that will launch for every object\&. 
+.br
+\fIdata\fP Argument for callback\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Last callback returned code\&. 
+.RE
+.PP
+
+.SS "int splay_tree_insert (\fBsplay_tree\fP * tr, \fBnode_elem\fP new_elem)"
+
+.PP
+Insert object in splay tree\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItr\fP Pointer to existing splay tree\&. 
+.br
+\fInew_elem\fP Data of new tree element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+0 if succes, -1 if failed and set errno\&. 
+.RE
+.PP
+
+.SS "int splay_tree_remove (\fBsplay_tree\fP * tr, \fBnode_key\fP key)"
+
+.PP
+Remove object from splay tree\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItr\fP Pointer to existing splay tree\&. 
+.br
+\fIkey\fP Key of splay tree element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+0 if succes, -1 if failed and set errno\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Splay tree library from the source code\&.

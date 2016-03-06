@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="md__home_chaperone__documents__programs__lunev_splay_tree__r_e_a_d_m_e" kind="page">
+    <compoundname>md__home_chaperone_Documents_Programs_Lunev_splay_tree_README</compoundname>
+    <title>splay_tree</title>
+    <detaileddescription>
+<para>Splay tree for cs cource in MIPT </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="structnode__t" kind="struct" language="C++" prot="public">
+    <compoundname>node_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnode__t_1ae3ce583073f3fd0a7cfd4ec3d6914537" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structnode__t" kindref="compound">node_t</ref> *</type>
+        <definition>struct node_t* left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" line="36" column="1" bodyfile="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnode__t_1a88ddc7d90adda8cc75b1e45dd5a58258" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structnode__t" kindref="compound">node_t</ref> *</type>
+        <definition>struct node_t* right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" line="37" column="1" bodyfile="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnode__t_1ab129d4876b839cd51f0603a367d48b65" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structnode__t" kindref="compound">node_t</ref> *</type>
+        <definition>struct node_t* parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" line="38" column="1" bodyfile="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnode__t_1a38d892c5472f7bfa3246ceb3ddda7732" prot="public" static="no" mutable="no">
+        <type><ref refid="splay__tree_8h_1a63ae18d1e62ef66f2b7e5e76cd04a27f" kindref="member">node_elem</ref></type>
+        <definition>node_elem data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" line="39" column="1" bodyfile="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnode__t_1a0a0db3ac2d60fc34a711ead8d0227779" prot="public" static="no" mutable="no">
+        <type><ref refid="splay__tree_8h_1adcfee39dc0f7f5e13313c7413093d98b" kindref="member">node_key</ref></type>
+        <definition>node_key key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" line="40" column="1" bodyfile="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>node_t</label>
+        <link refid="structnode__t"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>right</edgelabel>
+          <edgelabel>left</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" line="35" column="1" bodyfile="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" bodystart="35" bodyend="41"/>
+    <listofallmembers>
+      <member refid="structnode__t_1a38d892c5472f7bfa3246ceb3ddda7732" prot="public" virt="non-virtual"><scope>node_t</scope><name>data</name></member>
+      <member refid="structnode__t_1a0a0db3ac2d60fc34a711ead8d0227779" prot="public" virt="non-virtual"><scope>node_t</scope><name>key</name></member>
+      <member refid="structnode__t_1ae3ce583073f3fd0a7cfd4ec3d6914537" prot="public" virt="non-virtual"><scope>node_t</scope><name>left</name></member>
+      <member refid="structnode__t_1ab129d4876b839cd51f0603a367d48b65" prot="public" virt="non-virtual"><scope>node_t</scope><name>parent</name></member>
+      <member refid="structnode__t_1a88ddc7d90adda8cc75b1e45dd5a58258" prot="public" virt="non-virtual"><scope>node_t</scope><name>right</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

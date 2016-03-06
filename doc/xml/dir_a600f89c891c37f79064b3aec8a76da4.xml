@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="dir_a600f89c891c37f79064b3aec8a76da4" kind="dir">
+    <compoundname>/home/chaperone/Documents/Programs/Lunev</compoundname>
+    <innerdir refid="dir_54520058af2bd8702422e7283d986ba2">/home/chaperone/Documents/Programs/Lunev/splay_tree</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/chaperone/Documents/Programs/Lunev/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="structsplay__tree__t" kind="struct" language="C++" prot="public">
+    <compoundname>splay_tree_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsplay__tree__t_1aa570215f2f913275d6ff0d586e436d21" prot="public" static="no" mutable="no">
+        <type><ref refid="structnode__t" kindref="compound">node</ref> *</type>
+        <definition>node* root</definition>
+        <argsstring></argsstring>
+        <name>root</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" line="46" column="1" bodyfile="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsplay__tree__t_1aaf8bcc7f18b38c4e4ec1663c7589dd56" prot="public" static="no" mutable="no">
+        <type><ref refid="splay__tree_8h_1adcfee39dc0f7f5e13313c7413093d98b" kindref="member">node_key</ref>(*</type>
+        <definition>node_key(* get_key) (node_elem elem)</definition>
+        <argsstring>)(node_elem elem)</argsstring>
+        <name>get_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" line="47" column="1" bodyfile="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>node_t</label>
+        <link refid="structnode__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>right</edgelabel>
+          <edgelabel>left</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>splay_tree_t</label>
+        <link refid="structsplay__tree__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" line="45" column="1" bodyfile="/home/chaperone/Documents/Programs/Lunev/splay_tree/splay_tree.c" bodystart="45" bodyend="48"/>
+    <listofallmembers>
+      <member refid="structsplay__tree__t_1aaf8bcc7f18b38c4e4ec1663c7589dd56" prot="public" virt="non-virtual"><scope>splay_tree_t</scope><name>get_key</name></member>
+      <member refid="structsplay__tree__t_1aa570215f2f913275d6ff0d586e436d21" prot="public" virt="non-virtual"><scope>splay_tree_t</scope><name>root</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
